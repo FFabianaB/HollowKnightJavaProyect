@@ -2,19 +2,19 @@
 var botonPrincipal = document.getElementById("miBoton");
 var btn = document.getElementById("btnHollow");
 
-// Agrega un controlador de eventos onclick utilizando addEventListener al BOTON
+// Boton principal- Agrega evento click al boton principal
 botonPrincipal.addEventListener("click", function() {
-// El código que deseas ejecutar cuando se haga clic en el botón va aquí
+// Al hacer clic en el botón se oculta seccion H y se muestra u oculta BotonesHyS
     mostrarOcultarDiv()
     ocultarSectionH()
    
 });
 
 
-//   funciones para pantalla principal------------------------------------------------------
+//  ----------------------------------- Funciones para pantalla principal------------------------------------------------------
 function mostrarOcultarDiv() {
     // Obtiene una referencia al div por su ID
-    var div = document.getElementById("miDiv");
+    var div = document.getElementById("logoHollow");
 
     if (div.style.opacity === "0" ) {
         // Si está oculto lo muestra
@@ -31,7 +31,7 @@ function mostrarOcultarDiv() {
 };
 
 function exponePantallaDos() {
-    var div = document.getElementById("pantallaDos");
+    var div = document.getElementById("botonesHyS");
     setTimeout(function () {
         div.style.display = "flex";
         div.style.opacity = "0";
@@ -46,7 +46,7 @@ function exponePantallaDos() {
 
 
 function ocultaPantallaDos() {
-    var div = document.getElementById("pantallaDos");
+    var div = document.getElementById("botonesHyS");
  // Si está visible, lo oculta
     div.style.display= "none";
     div.style.opacity= "0";
