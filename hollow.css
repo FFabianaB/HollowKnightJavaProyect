@@ -111,6 +111,22 @@ body{
     z-index: 0;
    
 }
+/* -----------------------------------------Silksong section-------------------------------------------- */
+.seccionSilksong{
+    width: 98vw;
+    display: none;
+    
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    
+}
+.seccionSilksong img{
+    width: 95vw;
+    height: 98vh;
+    z-index: 0;
+   
+}
 
 /* ------------------------------------------MediaQuery------------------------------------------------ */
 @media (max-width: 360px){

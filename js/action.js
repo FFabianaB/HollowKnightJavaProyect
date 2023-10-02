@@ -1,12 +1,14 @@
 // Obtén una referencia al botón por su ID DEFINE AL BOTON lo vincula con id
 var botonPrincipal = document.getElementById("miBoton");
 var btn = document.getElementById("btnHollow");
+var btnS = document.getElementById("btnSilksong");
 
 // Boton principal- Agrega evento click al boton principal
 botonPrincipal.addEventListener("click", function() {
 // Al hacer clic en el botón se oculta seccion H y se muestra u oculta BotonesHyS
     mostrarOcultarDiv()
     ocultarSectionH()
+    ocultarSectionS()
    
 });
 
@@ -69,5 +71,29 @@ function ocultarSectionH(){
     var div = document.getElementById("sectionH");
     div.style.display= "none";
 }
+
+function ocultarSectionS(){
+    var div = document.getElementById("sectionS");
+    div.style.display= "none";
+}
+
+// -------------------------------------  funciones para pantalla Silksong------------------------------------------------------
+
+//evento que declara click al boton hollow y se oculta a si mismo
+btnS.addEventListener("click", function() {
+    ocultaPantallaDos();
+    revelarSectionS();
+});
+
+function revelarSectionS(){
+var div = document.getElementById("sectionS");
+div.style.display= "flex";
+}
+
+function ocultarSectionS(){
+var div = document.getElementById("sectionS");
+div.style.display= "none";
+}
+
 
 
