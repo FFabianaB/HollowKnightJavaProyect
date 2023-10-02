@@ -31,8 +31,6 @@ body{
     width: 98vw;
     margin: 3% 0% 5% 0%;
     
-    
-    
 }
 
 .boton img{
@@ -74,8 +72,13 @@ body{
     height: 400px;
     width: 300px;
     
-    
 }
+.card a{
+    width: 100px;
+    height: 100px;
+    z-index: 10;
+}
+
 .card img{
     height: 300px;
     width: 300px;
