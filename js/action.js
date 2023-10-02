@@ -6,26 +6,37 @@ botonPrincipal.addEventListener("click", function() {
     mostrarOcultarDiv()
     ocultarSectionH()
     ocultarSectionS()
+    ocultarBotonSecundario()
+    ocultarBotonTerciario()
    
 });
 
 
 //  ----------------------------------- Funciones para pantalla principal------------------------------------------------------
+function mostrarlogo(){
+    var div = document.getElementById("logoHollow");
+    div.style.opacity= "1";
+    div.style.transition= "2s";
+}
+function ocultarlogo(){
+    var div = document.getElementById("logoHollow");
+    div.style.opacity= "0";
+    div.style.transition= "1s";
+}
+
+
+
 function mostrarOcultarDiv() {
     // Obtiene una referencia al div por su ID
     var div = document.getElementById("logoHollow");
 
     if (div.style.opacity === "0" ) {
-        // Si está oculto lo muestra
-                
-         div.style.opacity= "1";
-         div.style.transition= "2s";
+         mostrarlogo()
          ocultaPantallaDos()
     } else {
         // Si está visible, lo oculta
         exponePantallaDos() 
-        div.style.opacity= "0";
-        div.style.transition= "1s";
+        ocultarlogo()
     }
 };
 
@@ -65,13 +76,34 @@ btn.addEventListener("click", function() {
 function revelarSectionH(){
     var div = document.getElementById("sectionH");
     div.style.display= "flex";
+    revelarBotonSecundario();
+    
 }
 
 function ocultarSectionH(){
     var div = document.getElementById("sectionH");
     div.style.display= "none";
+    
 }
 
+//........................................Botón cerrar sección.........................
+
+var botonSecundario = document.getElementById("miBotonDos");
+
+function revelarBotonSecundario(){
+    var div = document.getElementById("miBotonDos");
+    div.style.display= "flex";
+};
+function ocultarBotonSecundario(){
+    var div = document.getElementById("miBotonDos");
+    div.style.display= "none";
+   
+};
+
+botonSecundario.addEventListener("click", function() {
+    ocultarSectionH();
+    ocultarBotonSecundario();
+});
 
 // -------------------------------------  funciones para pantalla Silksong------------------------------------------------------
 // Defino botonS
@@ -81,6 +113,7 @@ var btnS = document.getElementById("btnSilksong");
 btnS.addEventListener("click", function() {
     ocultaPantallaDos();
     revelarSectionS();
+    revelarBotonTerciario();
 });
 
 function revelarSectionS(){
@@ -91,7 +124,28 @@ div.style.display= "flex";
 function ocultarSectionS(){
 var div = document.getElementById("sectionS");
 div.style.display= "none";
+
 }
+//........................................Botón tres cerrar sección.........................
+
+var botonTerciario = document.getElementById("miBotonTres");
+
+function revelarBotonTerciario(){
+    var div = document.getElementById("miBotonTres");
+    div.style.display= "flex";
+};
+function ocultarBotonTerciario(){
+    var div = document.getElementById("miBotonTres");
+    div.style.display= "none";
+    
+    
+    
+};
+
+botonTerciario.addEventListener("click", function() {
+    ocultarSectionS();
+    ocultarBotonTerciario();
+});
 
 
 

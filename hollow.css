@@ -19,7 +19,6 @@ body{
     height: 55vh;
 }
 
-
 #particles-js{
     width: 98vw;
     height: 100vh;
@@ -36,8 +35,8 @@ body{
 .boton img{
     position: relative;
     left: 48.3%;
-    height: 70px;
-    width: 50px;
+    height: 80px;
+    width: 60px;
     z-index: 5;
 }
 
@@ -111,6 +110,31 @@ body{
     z-index: 0;
    
 }
+/* .....................................................boton dos............................................. */
+.botonDos{
+    display: none;
+    width: 98vw;
+    margin: -8% 0% 2% 0%;
+}
+
+.botonDos img{
+    position: relative;
+    left: 48.3%;
+    height: 80px;
+    width: 60px;
+    z-index: 5;
+}
+
+.botonDos img:hover{
+    transform: scale(1.3);
+    cursor: pointer;
+    transition: 2s;
+}
+
+.botonDos img:not(:hover) {
+    transform: scale(1); /* Vuelve al tamaño original lentamente al retirar el cursor */
+    transition: 2s;
+}
 /* -----------------------------------------Silksong section-------------------------------------------- */
 .seccionSilksong{
     width: 98vw;
@@ -126,6 +150,31 @@ body{
     height: 98vh;
     z-index: 0;
    
+}
+/* .....................................................boton tres............................................. */
+.botonTres{
+    display: none;
+    width: 98vw;
+    margin: -8% 0% 2% 0%;
+}
+
+.botonTres img{
+    position: relative;
+    left: 48.3%;
+    height: 80px;
+    width: 60px;
+    z-index: 5;
+}
+
+.botonTres img:hover{
+    transform: scale(1.3);
+    cursor: pointer;
+    transition: 2s;
+}
+
+.botonTres img:not(:hover) {
+    transform: scale(1); /* Vuelve al tamaño original lentamente al retirar el cursor */
+    transition: 2s;
 }
 
 /* ------------------------------------------MediaQuery------------------------------------------------ */
