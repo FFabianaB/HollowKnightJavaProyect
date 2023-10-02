@@ -1,6 +1,9 @@
 // Obtén una referencia al botón por su ID
 var boton = document.getElementById("miBoton");
 
+// var btnH = document.getElementById("btnHollow");
+// var btnS = document.getElementById("btnSilksong");
+
 // Agrega un controlador de eventos onclick utilizando addEventListener
 boton.addEventListener("click", function() {
     // El código que deseas ejecutar cuando se haga clic en el botón va aquí
@@ -8,8 +11,20 @@ boton.addEventListener("click", function() {
    
 });
 
+// btnH.addEventListener("click", function() {
+    
+//     pantallaHollow() 
+   
+// });
 
+// btnS.addEventListener("click", function() {
+   
+//     pantallaSilksong() 
+    
+   
+// });
 
+//   funciones para pantalla principal------------------------------------------------------
 function mostrarOcultarDiv() {
     // Obtiene una referencia al div por su ID
     var div = document.getElementById("miDiv");
@@ -50,6 +65,9 @@ function ocultaPantallaDos() {
     div.style.opacity= "0";
     div.style.transition= "4s";
 }
+//   funciones para pantalla secundaria------------------------------------------------------
 
 
+// function pantallaHollow() {}
 
+// function pantallaSilksong() {}
