@@ -130,15 +130,38 @@ body{
 
 /* ------------------------------------------MediaQuery------------------------------------------------ */
 @media (max-width: 360px){
-    .masterContainer img{
-        width: 85vw;
-        height: 20vh;
-    }
-    .boton{
-       
-        bottom: 10vh;
-        left: 44vw;
-        
-    }
+body>*{
+    width: 70vw;
+    height: 40vh; 
+}
 
+.masterContainer img{
+
+width: 88vw;
+height: 25vh;
+}
+.boton img{
+left: 148px;
+}
+.card{
+    
+margin: 2%;
+left: -60px;
+}
+
+.card-group{
+flex-flow: column;
+
+margin-top: 50px;
+margin-left: 0px;
+width: 88vw;
+height: 25vh;
+}
+.card img{
+
+margin-left: 0px;
+height: 200px;
+width: 200px;
+
+}
 }
