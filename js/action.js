@@ -1,11 +1,12 @@
 // Obtén una referencia al botón por su ID DEFINE AL BOTON lo vincula con id
-var boton = document.getElementById("miBoton");
+var botonPrincipal = document.getElementById("miBoton");
 var btn = document.getElementById("btnHollow");
 
 // Agrega un controlador de eventos onclick utilizando addEventListener al BOTON
-boton.addEventListener("click", function() {
+botonPrincipal.addEventListener("click", function() {
 // El código que deseas ejecutar cuando se haga clic en el botón va aquí
     mostrarOcultarDiv()
+    ocultarSectionH()
    
 });
 
@@ -53,16 +54,20 @@ function ocultaPantallaDos() {
 }
 // -------------------------------------  funciones para pantalla hollow------------------------------------------------------
 
+//evento que declara click al boton hollow y se oculta a si mismo
 btn.addEventListener("click", function() {
-    // El código que deseas ejecutar cuando se haga clic en el botón va aquí
-    redirigirASeccion()
-       
-    });
-    
+        ocultaPantallaDos();
+        revelarSectionH();
+});
 
-function redirigirASeccion() {
-    ocultaPantallaDos();
+function revelarSectionH(){
+    var div = document.getElementById("sectionH");
+    div.style.display= "flex";
 }
 
+function ocultarSectionH(){
+    var div = document.getElementById("sectionH");
+    div.style.display= "none";
+}
 
 

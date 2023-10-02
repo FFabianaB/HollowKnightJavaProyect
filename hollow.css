@@ -98,7 +98,7 @@ body{
 /* -----------------------------------------Hollow section-------------------------------------------- */
 .seccionHollow{
     width: 98vw;
-    display: flex;
+    display: none;
     
     align-content: center;
     justify-content: center;
