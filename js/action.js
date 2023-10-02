@@ -1,14 +1,32 @@
 // Obtén una referencia al botón por su ID DEFINE AL BOTON lo vincula con id
 var botonPrincipal = document.getElementById("miBoton");
 // Boton principal- Agrega evento click al boton principal
+
 botonPrincipal.addEventListener("click", function() {
-// Al hacer clic en el botón se oculta seccion H y se muestra u oculta BotonesHyS
-    mostrarOcultarDiv()
+    var div = document.getElementById("botonesHyS");
+    var s = document.getElementById("sectionS");
+    var h = document.getElementById("sectionH");
+
+    if (s.style.display === "none" || h.style.display === "none") {
+        mostrarlogo();
+    } else if (div.style.display === "none") {
+        mostrarlogo();
+        ocultaPantallaDos();
+   } else {
+       // Si está visible, lo oculta
+       exponePantallaDos();
+       ocultarlogo();
+   }
+   
+   
+
+   
     ocultarSectionH()
     ocultarSectionS()
     ocultarBotonSecundario()
     ocultarBotonTerciario()
-   
+
+ 
 });
 
 
