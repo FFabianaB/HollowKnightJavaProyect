@@ -5,7 +5,7 @@ var botonPrincipal = document.getElementById("miBoton");
 botonPrincipal.addEventListener("click", function(){
     var div = document.getElementById("logoHollow");
 
-    // 0 indica un 100% de opacidad o traslucido
+    // 0 Indica un 100% de opacidad o traslucido
     if (div.style.opacity === "0" ) { 
         mostrarLogoOcultarMenu()
             } else {
