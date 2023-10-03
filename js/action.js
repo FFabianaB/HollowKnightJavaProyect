@@ -1,36 +1,34 @@
-// Obtén una referencia al botón por su ID DEFINE AL BOTON lo vincula con id
+
+//  ----------------------------------- Funciones Boton  principal------------------------------------------------------
 var botonPrincipal = document.getElementById("miBoton");
-// Boton principal- Agrega evento click al boton principal
 
-botonPrincipal.addEventListener("click", function() {
-    var div = document.getElementById("botonesHyS");
-    var s = document.getElementById("sectionS");
-    var h = document.getElementById("sectionH");
+botonPrincipal.addEventListener("click", function(){
+    var div = document.getElementById("logoHollow");
 
-    if (s.style.display === "none" || h.style.display === "none") {
-        mostrarlogo();
-    } else if (div.style.display === "none") {
-        mostrarlogo();
-        ocultaPantallaDos();
-   } else {
-       // Si está visible, lo oculta
-       exponePantallaDos();
-       ocultarlogo();
-   }
-   
-   
-
-   
-    ocultarSectionH()
-    ocultarSectionS()
-    ocultarBotonSecundario()
-    ocultarBotonTerciario()
-
- 
+    // 0 indica un 100% de opacidad o traslucido
+    if (div.style.opacity === "0" ) { 
+        mostrarLogoOcultarMenu()
+            } else {
+        ocultarLogoMostrarMenu()
+            };
+      
+    
 });
 
 
-//  ----------------------------------- Funciones para pantalla principal------------------------------------------------------
+
+//  ----------------------------------- Funciones para Logo principal------------------------------------------------------
+function ocultarLogoMostrarMenu(){
+    ocultarlogo();
+    mostrarMenuHyS();
+}
+
+function mostrarLogoOcultarMenu(){
+    mostrarlogo()
+    ocultarMenuHyS()
+}
+
+
 function mostrarlogo(){
     var div = document.getElementById("logoHollow");
     div.style.opacity= "1";
@@ -44,28 +42,17 @@ function ocultarlogo(){
 
 
 
-function mostrarOcultarDiv() {
-    // Obtiene una referencia al div por su ID
-    var div = document.getElementById("logoHollow");
 
-    if (div.style.opacity === "0" ) {
-         mostrarlogo()
-         ocultaPantallaDos()
-    } else {
-        // Si está visible, lo oculta
-        exponePantallaDos() 
-        ocultarlogo()
-    }
-};
+//  ----------------------------------- Funciones para Menu HyS------------------------------------------------------
 
-function exponePantallaDos() {
-    var div = document.getElementById("botonesHyS");
+function mostrarMenuHyS() {
+    var div = document.getElementById("menuHyS");
     setTimeout(function () {
-        div.style.display = "flex";
+        div.style.display = "none";
         div.style.opacity = "0";
     }, 500); // 1000 milisegundos = 1 segundos
     setTimeout(function () {
-        
+        div.style.display = "flex";
         div.style.opacity = "1";
         div.style.transition = "opacity 3s";
     }, 1000);
@@ -73,8 +60,8 @@ function exponePantallaDos() {
 }
 
 
-function ocultaPantallaDos() {
-    var div = document.getElementById("botonesHyS");
+function ocultarMenuHyS() {
+    var div = document.getElementById("menuHyS");
  // Si está visible, lo oculta
     div.style.display= "none";
     div.style.opacity= "0";
@@ -87,7 +74,7 @@ var btn = document.getElementById("btnHollow");
 
 //evento que declara click al boton hollow y se oculta a si mismo
 btn.addEventListener("click", function() {
-        ocultaPantallaDos();
+        ocultarMenuHyS();
         revelarSectionH();
 });
 
@@ -121,6 +108,7 @@ function ocultarBotonSecundario(){
 botonSecundario.addEventListener("click", function() {
     ocultarSectionH();
     ocultarBotonSecundario();
+    mostrarlogo();
 });
 
 // -------------------------------------  funciones para pantalla Silksong------------------------------------------------------
@@ -129,7 +117,7 @@ var btnS = document.getElementById("btnSilksong");
 
 //evento que declara click al boton Silksong y se oculta a si mismo
 btnS.addEventListener("click", function() {
-    ocultaPantallaDos();
+    ocultarMenuHyS();
     revelarSectionS();
     revelarBotonTerciario();
 });
@@ -163,6 +151,7 @@ function ocultarBotonTerciario(){
 botonTerciario.addEventListener("click", function() {
     ocultarSectionS();
     ocultarBotonTerciario();
+    mostrarlogo()
 });
 
 

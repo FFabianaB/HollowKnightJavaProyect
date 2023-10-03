@@ -3,6 +3,8 @@ body{
    
 }
 
+
+/* <!-----------------------  imagen LOGO principal -------------------------> */
 .masterContainer{
     width: 98vw;
     height: 70vh;
@@ -18,14 +20,14 @@ body{
     width: 85vw;
     height: 55vh;
 }
-
+/* <!-----------------------  Particulas -------------------------> */
 #particles-js{
     width: 98vw;
     height: 100vh;
     position: fixed;
     z-index: 1;
 }
-
+/* <!-----------------------  Boton -------------------------> */
 .boton{
     width: 98vw;
     margin: 3% 0% 5% 0%;
@@ -52,7 +54,7 @@ body{
 }
 /* ----------------------------------------------------car group---------------------------------------- */
 
-#botonesHyS {
+#menuHyS {
     display: none;
     position: fixed;
     top: 15%;
