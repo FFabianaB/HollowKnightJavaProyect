@@ -9,13 +9,13 @@ botonPrincipal.addEventListener("click", function(){
     if (div.style.opacity === "0" ) { 
         mostrarLogoOcultarMenu()
             } else {
-        ocultarLogoMostrarMenu()
+        ocultarLogoMostrarMenu();
+        ocultarSectionS();
+        ocultarSectionH();
+        ocultarBotonTerciario();
+        ocultarBotonSecundario();
             };
-      
-    
 });
-
-
 
 //  ----------------------------------- Funciones para Logo principal------------------------------------------------------
 function ocultarLogoMostrarMenu(){
@@ -82,6 +82,7 @@ function revelarSectionH(){
     var div = document.getElementById("sectionH");
     div.style.display= "flex";
     revelarBotonSecundario();
+    mostrarlogo();
     
 }
 
@@ -125,6 +126,7 @@ btnS.addEventListener("click", function() {
 function revelarSectionS(){
 var div = document.getElementById("sectionS");
 div.style.display= "flex";
+mostrarlogo();
 }
 
 function ocultarSectionS(){
@@ -143,9 +145,6 @@ function revelarBotonTerciario(){
 function ocultarBotonTerciario(){
     var div = document.getElementById("miBotonTres");
     div.style.display= "none";
-    
-    
-    
 };
 
 botonTerciario.addEventListener("click", function() {

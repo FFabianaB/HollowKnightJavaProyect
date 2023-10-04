@@ -1,9 +1,6 @@
 body{
-    background-color: black;
-   
+    background-color: black; 
 }
-
-
 /* <!-----------------------  Imagen LOGO principal -------------------------> */
 .masterContainer{
     width: 98vw;
@@ -17,7 +14,7 @@ body{
 }
 
 .masterContainer img{
-    width: 85vw;
+    width: 80vw;
     height: 55vh;
 }
 /* <!-----------------------  Particulas -------------------------> */
@@ -36,10 +33,11 @@ body{
 
 .boton img{
     position: relative;
-    left: 48.3%;
+    left: 47.5%;
     height: 80px;
     width: 60px;
     z-index: 5;
+    
 }
 
 .boton img:hover{
@@ -52,7 +50,7 @@ body{
     transform: scale(1); /* Vuelve al tamaño original lentamente al retirar el cursor */
     transition: 2s;
 }
-/* ----------------------------------------------------car group---------------------------------------- */
+/* ----------------------------------------------------Menu HyS---------------------------------------- */
 
 #menuHyS {
     display: none;
@@ -61,26 +59,26 @@ body{
     left: 25%;
     z-index: 5;
 }
-.card-group{
+.btn-card{
     display: flex;
     justify-content: center;
     align-items: center;
     
 
 }
-.card{
+.carta{
     margin: 20px;
     height: 400px;
     width: 300px;
     
 }
-.card a{
+.carta a{
     width: 100px;
     height: 100px;
     z-index: 10;
 }
 
-.card img{
+.carta img{
     height: 300px;
     width: 300px;
     border-radius: 30px;
@@ -88,11 +86,11 @@ body{
 }
 
 
-.card img:not(:hover) {
+.carta img:not(:hover) {
     opacity: 0.5;
     
 }
-.card img:hover{
+.carta img:hover{
     cursor: pointer;
    
 }
@@ -112,6 +110,86 @@ body{
     z-index: 0;
    
 }
+
+/* ===================================Nav======================================================================= */
+header{
+    position: absolute;
+    top: 102%;
+    z-index: 10;
+    width: 95vw;
+    height: 5rem;
+    background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.navv{
+    display: flex;
+    align-items: center;
+    margin-left: 4rem;
+}
+
+nav{
+    margin-top: 10px;
+}
+header h3{
+    color: white;
+    
+    font-size: 1.25rem;
+}
+header li a{
+    color:rgba(255,255,255,.55);
+    text-decoration: none;
+    
+}
+.linav{
+    padding: 0.5rem 1rem;
+}
+.linav a:hover{
+    cursor: pointer;
+    color:white;
+    transition: 1s;
+}
+
+#comprar{
+  padding: 0.5rem 1rem;
+}
+#comprar:hover{
+    background-color: pink;
+    border-radius: 10px 10px 10px 10px;
+    color:white;
+    cursor: pointer;  
+}
+
+nav ul {
+    display: flex;
+    flex-flow: row nowrap;
+    list-style: none;
+}
+
+.navv img{
+    height: 120px;
+    width: 100px;
+}
+
+nav ul li{
+    display: flex;
+    align-items: center;
+}
+#comprar{
+    background-color: #24243e8f;
+    border-radius: 10px 10px 10px 10px;
+    font-weight: bolder;
+    color: palevioletred;
+}
+
+.fa-facebook:hover, .fa-brands:hover{
+    cursor: pointer;
+    transform: scale(1.3);
+    transition: 0.5s;
+    color: pink;
+}
+
 /* .....................................................boton dos............................................. */
 .botonDos{
     display: none;
@@ -187,11 +265,10 @@ body>*{
 }
 
 .masterContainer img{
-
 width: 88vw;
 height: 25vh;
 }
-.boton img{
+.carta img{
 left: 148px;
 }
 .card{
@@ -200,7 +277,7 @@ margin: 2%;
 left: -60px;
 }
 
-.card-group{
+.btn-card{
 flex-flow: column;
 
 margin-top: 50px;
@@ -208,7 +285,7 @@ margin-left: 0px;
 width: 88vw;
 height: 25vh;
 }
-.card img{
+.carta img{
 
 margin-left: 0px;
 height: 200px;
