@@ -1,21 +1,17 @@
 
 //  ----------------------------------- Funciones Boton  principal------------------------------------------------------
 var botonPrincipal = document.getElementById("miBoton");
-
-botonPrincipal.addEventListener("click", function(){
-    var div = document.getElementById("logoHollow");
-
-    // 0 Indica un 100% de opacidad o traslucido
-    if (div.style.opacity === "0" ) { 
-        mostrarLogoOcultarMenu()
-            } else {
-        ocultarLogoMostrarMenu();
-        ocultarSectionS();
-        ocultarSectionH();
-        ocultarBotonTerciario();
-        ocultarBotonSecundario();
-            };
+// Boton principal- Agrega evento click al boton principal
+botonPrincipal.addEventListener("click", function() {
+// Al hacer clic en el botón se oculta seccion H y se muestra u oculta BotonesHyS
+    mostrarOcultarDiv()
+    ocultarSectionH()
+    ocultarSectionS()
+    ocultarBotonSecundario()
+    ocultarBotonTerciario()
+   
 });
+
 
 //  ----------------------------------- Funciones para Logo principal------------------------------------------------------
 function ocultarLogoMostrarMenu(){
