@@ -47,10 +47,7 @@ function ocultarlogo(){
 
 function mostrarMenuHyS() {
     var div = document.getElementById("menuHyS");
-    setTimeout(function () {
-        div.style.display = "none";
-        div.style.opacity = "0";
-    }, 500); // 1000 milisegundos = 1 segundos
+    
     setTimeout(function () {
         div.style.display = "flex";
         div.style.opacity = "1";

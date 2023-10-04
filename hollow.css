@@ -54,28 +54,28 @@ body{
 
 #menuHyS {
     display: none;
-    position: fixed;
+    position: absolute;
     top: 15%;
     left: 25%;
-    z-index: 5;
+   
 }
 .btn-card{
     display: flex;
     justify-content: center;
     align-items: center;
-    
+    z-index: 2;
 
 }
 .carta{
     margin: 20px;
     height: 400px;
     width: 300px;
-    
+    z-index: 3;
 }
 .carta a{
     width: 100px;
     height: 100px;
-    z-index: 10;
+   
 }
 
 .carta img{
@@ -92,9 +92,11 @@ body{
 }
 .carta img:hover{
     cursor: pointer;
+    opacity: 1;
+   
    
 }
-/* -----------------------------------------Hollow section-------------------------------------------- */
+/* -----------------------------------------Seccion H-------------------------------------------- */
 .seccionHollow{
     width: 98vw;
     display: none;
