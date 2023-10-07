@@ -28,7 +28,6 @@ body{
 .boton{
     width: 98vw;
     margin: 3% 0% 5% 0%;
-    
 }
 
 .boton img{
@@ -37,7 +36,6 @@ body{
     height: 80px;
     width: 60px;
     z-index: 5;
-    
 }
 
 .boton img:hover{
@@ -258,45 +256,68 @@ nav ul li{
 
 /* ------------------------------------------MediaQuery------------------------------------------------ */
 @media (max-width: 360px){
-body>*{
-    width: 70vw;
-    height: 40vh; 
+
+body{
+    height: 520px;
+    width: 300px;
 }
 #particles-js{
-height: 98vh;
+    height: 520px;
+    width: 300px;
 }
-#miBoton{
-    height: 8px;  
+#logoHollow{
+    height: 400px;
+    width: 300px;
 }
-#miBoton img{
-    left: 40%;  
-}
-.masterContainer img{
-width: 88vw;
-height: 25vh;
-}
-.carta img{
-left: 148px;
-}
-.card{
-    
-margin: 2%;
-left: -60px;
+#logoHollow img{
+    height: 150px;
+    width: 250px;
 }
 
+#miBoton,#miBotonDos,#miBotonTres {
+    height: 100px;
+    width: 250px;
+}
+.boton{
+    width: 240px;
+    margin: 3% 0% 5% 0%;
+}
+#miBotonDos img{
+    height: 80px;
+    width: 60px;
+}
+/* ============================================================= */
+#menuHyS {
+    top: 0%;
+    left: 155px;
+    height: 400px;
+    width: 100px;   
+}
 .btn-card{
-flex-flow: column;
+    
+    width: 50px;
+    display: flex;
+    flex-flow: column nowrap;
+    
+}
+.carta{
 
-margin-top: 50px;
-margin-left: 0px;
-width: 88vw;
-height: 25vh;
+    height: 200px;
+    width: 200px;
 }
 .carta img{
+    width: 150px;
+    height:150px;  
+}
+/* ============================================================= */
+.seccionHollow img{
+    width: 333px;
+    height: 500px;
 
-margin-left: 0px;
-height: 200px;
-width: 200px;
-
+   
+}
+.seccionSilksong{
+    width: 300px;
+    height: 500px;
 }
 }
