@@ -267,16 +267,16 @@ body{
 }
 #logoHollow{
     height: 400px;
-    width: 300px;
+    width: 350px;
 }
 #logoHollow img{
     height: 150px;
-    width: 250px;
+    width: 320px;
 }
 
 #miBoton,#miBotonDos,#miBotonTres {
     height: 100px;
-    width: 250px;
+    width: 300px;
 }
 .boton{
     width: 240px;
