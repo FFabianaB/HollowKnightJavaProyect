@@ -258,11 +258,11 @@ nav ul li{
 @media (max-width: 360px){
 
 body{
-    height: 640px;
+    height: 570px;
     width: 360px;
 }
 #particles-js{
-    height: 640px;
+    height: 570px;
     width: 360px;
 }
 #logoHollow{
@@ -289,9 +289,13 @@ body{
 /* ============================================================= */
 #menuHyS {
     top: 0%;
-    left: 155px;
+    left: 55%;
     height: 400px;
     width: 100px;   
+}
+.carta img:not(:hover) {
+    opacity: 1;
+    
 }
 .btn-card{
     
@@ -301,11 +305,12 @@ body{
     
 }
 .carta{
-
+    
     height: 200px;
     width: 200px;
 }
 .carta img{
+    
     width: 150px;
     height:150px;  
 }
