@@ -258,12 +258,12 @@ nav ul li{
 @media (max-width: 360px){
 
 body{
-    height: 520px;
-    width: 300px;
+    height: 640px;
+    width: 360px;
 }
 #particles-js{
-    height: 520px;
-    width: 300px;
+    height: 640px;
+    width: 360px;
 }
 #logoHollow{
     height: 400px;
