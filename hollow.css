@@ -17,14 +17,14 @@ body{
     width: 80vw;
     height: 55vh;
 }
-/* <!------------------------------------------------  Particulas -------------------------------------------------------------> */
+/* <!------------------------------------------------  Particulas -----------------------------------------------------> */
 #particles-js{
     width: 98vw;
     height: 100vh;
     position: fixed;
     z-index: 1;
 }
-/* <!---------------------.---------------------------  Boton ---------------------------------------------------------> */
+/* <!-------------------------------------------------  Boton ---------------------------------------------------------> */
 .boton{
     width: 98vw;
     margin: 3% 0% 5% 0%;
@@ -113,36 +113,21 @@ body{
    
 }
 
-/* =================================================Nav======================================================================= */
+/* =================================================Nav 1 king================================================================== */
 header{
     position: absolute;
-    top: 102%;
+    top: 104%;
     z-index: 10;
     width: 95vw;
-    height: 5rem;
+    height: 3rem;
     background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
     display: flex;
     align-items: center;
     justify-content: space-around;
 }
-.navv{
-    display: flex;
-    align-items: center;
-    margin-left: 4rem;
-}
-
-nav{
-    margin-top: 10px;
-}
-header h3{
-    color: white;
-    
-    font-size: 1.25rem;
-}
 header li a{
     color:rgba(255,255,255,.55);
-    text-decoration: none;
-    
+    text-decoration: none;   
 }
 .linav{
     padding: 0.5rem 1rem;
@@ -152,59 +137,71 @@ header li a{
     color:white;
     transition: 1s;
 }
-
-#comprar{
-  padding: 0.5rem 1rem;
-}
-#comprar:hover{
-    background-color: pink;
-    border-radius: 10px 10px 10px 10px;
-    color:white;
-    cursor: pointer;  
-}
-
 nav ul {
     display: flex;
     flex-flow: row nowrap;
     list-style: none;
 }
 
-.navv img{
+.king-logo img{
     height: 120px;
     width: 100px;
+}
+.king-logo:hover img:hover{
+    cursor: pointer;
+    transform: scale(1.3);
+    transition: 0.5s;
 }
 
 nav ul li{
     display: flex;
     align-items: center;
 }
-#comprar{
-    background-color: #24243e8f;
-    border-radius: 10px 10px 10px 10px;
-    font-weight: bolder;
-    color: palevioletred;
-}
-
 .fa-facebook:hover, .fa-brands:hover{
     cursor: pointer;
     transform: scale(1.3);
     transition: 0.5s;
     color: pink;
 }
+/* ...............................................BotonesNav............................................ */
 
-/* .....................................................boton dos............................................. */
+
+.btns-pink ul li{
+   padding: 10px;
+   margin-left: 10px;
+}
+
+#btn-pink{
+    height: 100%;
+    background-color: #18182ebe;
+    border-radius: 10px 10px 10px 10px;
+    font-weight: bolder;
+    color: palevioletred;
+
+}
+#btn-pink:hover{
+    background-color: rgb(219, 154, 165);
+    border-radius: 10px 10px 10px 10px;
+    color: #24243e;
+    cursor: pointer;  
+
+}
+/* ..............................................boton dos............................................. */
 .botonDos{
+   
     display: none;
-    width: 98vw;
-    margin: -8% 0% 2% 0%;
+    position: absolute;
+    align-items: end;
+    justify-content:center;
+    width: 100px;
+    height: 600px;
+    z-index: 3;
+   
 }
 
 .botonDos img{
-    position: relative;
-    left: 48.3%;
     height: 80px;
     width: 60px;
-    z-index: 5;
 }
 
 .botonDos img:hover{
@@ -233,7 +230,7 @@ nav ul li{
     z-index: 0;
    
 }
-/* .....................................................boton tres............................................. */
+/* ...............................................boton tres............................................. */
 .botonTres{
     display: none;
     width: 98vw;
@@ -265,7 +262,15 @@ body>*{
     width: 70vw;
     height: 40vh; 
 }
-
+#particles-js{
+height: 98vh;
+}
+#miBoton{
+    height: 8px;  
+}
+#miBoton img{
+    left: 40%;  
+}
 .masterContainer img{
 width: 88vw;
 height: 25vh;

@@ -17,7 +17,7 @@ botonPrincipal.addEventListener("click", function(){
             };
 });
 
-//  ----------------------------------- Funciones para Logo principal------------------------------------------------------
+//  ----------------------------------- Funciones para Logo principal----------------------------------------------------
 function ocultarLogoMostrarMenu(){
     ocultarlogo();
     mostrarMenuHyS();
@@ -39,10 +39,6 @@ function ocultarlogo(){
     div.style.opacity= "0";
     div.style.transition= "1s";
 }
-
-
-
-
 //  ----------------------------------- Funciones para Menu HyS------------------------------------------------------
 
 function mostrarMenuHyS() {
@@ -64,7 +60,7 @@ function ocultarMenuHyS() {
     div.style.opacity= "0";
     div.style.transition= "4s";
 }
-// -------------------------------------  funciones para pantalla hollow------------------------------------------------------
+// -------------------------------------  funciones para pantalla hollow-------------------------------------------------
 
 // defino boton H
 var btn = document.getElementById("btnHollow");
@@ -88,8 +84,11 @@ function ocultarSectionH(){
     div.style.display= "none";
     
 }
+// .......................................Boton King...................................................
 
-//........................................Botón cerrar sección.........................
+
+
+//........................................Botón cerrar sección..........................................
 
 var botonSecundario = document.getElementById("miBotonDos");
 
