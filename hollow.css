@@ -10,7 +10,6 @@ body{
     align-items: center;
     justify-content: center;
     align-content: center;
-   
 }
 
 .masterContainer img{
@@ -181,8 +180,7 @@ nav ul li{
     background-color: rgb(219, 154, 165);
     border-radius: 10px 10px 10px 10px;
     color: #24243e;
-    cursor: pointer;  
-
+    cursor: pointer; 
 }
 /* ..............................................boton dos............................................. */
 .botonDos{
@@ -258,8 +256,15 @@ nav ul li{
 @media (max-width: 360px){
 
 body{
+    
     height: 570px;
     width: 360px;
+}
+body>*{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
 }
 #particles-js{
     height: 570px;
@@ -276,22 +281,26 @@ body{
 
 #miBoton,#miBotonDos,#miBotonTres {
     height: 100px;
-    width: 300px;
+    width: 350px;
 }
-.boton{
-    width: 240px;
-    margin: 3% 0% 5% 0%;
-}
+
 #miBotonDos img{
     height: 80px;
     width: 60px;
 }
+
+.boton img{
+
+    left: 0%;
+ 
+}
 /* ============================================================= */
 #menuHyS {
+    
     top: 3%;
-    left: 55%;
-    height: 400px;
-    width: 100px;   
+    
+    height: 470px;
+    width: 230px;
 }
 .carta img:not(:hover) {
     opacity: 1;
@@ -302,6 +311,7 @@ body{
     width: 50px;
     display: flex;
     flex-flow: column nowrap;
+    align-items: center;
     
 }
 #btnHollow{
@@ -317,15 +327,33 @@ body{
     width: 150px;
     height:150px;  
 }
-/* ============================================================= */
-.seccionHollow img{
-    width: 333px;
-    height: 500px;
 
-   
+
+/* ============================================================= */
+.seccionHollow{
+    width: 350px;
+    height: 570px;
+    overflow: hidden;
+
+}
+.seccionHollow img{
+    width: 760px;
+    height: 500px;
+    
+
+}
+.king{
+    display: none;
 }
 .seccionSilksong{
-    width: 300px;
+    width: 350px;
+    height: 570px;
+    overflow: hidden;
+
+}
+.seccionSilksong img{
+    width: 760px;
     height: 500px;
+    
 }
 }

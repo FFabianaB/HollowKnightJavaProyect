@@ -86,7 +86,10 @@ function ocultarSectionH(){
 }
 // .......................................Boton King...................................................
 
-
+var btnKing = document.getElementById("king-logo");
+btnKing.addEventListener("click", function() {
+   ocultarNav()
+});
 
 //........................................Botón cerrar sección..........................................
 
@@ -108,9 +111,10 @@ botonSecundario.addEventListener("click", function() {
     mostrarlogo();
 });
 
-// -------------------------------------  funciones para pantalla Silksong------------------------------------------------------
+// -------------------------------------Funciones para pantalla Silksong------------------------------------------------------
 // Defino botonS
 var btnS = document.getElementById("btnSilksong");
+
 
 //evento que declara click al boton Silksong y se oculta a si mismo
 btnS.addEventListener("click", function() {
@@ -149,6 +153,12 @@ botonTerciario.addEventListener("click", function() {
     mostrarlogo()
 });
 
+
+//........................................Expand nav.........................
+
+function ocultarNav(){
+
+}
 
 
 
